@@ -25,3 +25,7 @@ for each_row in range(2, Rating_List.max_row+1):
 
 print(tests_per_child)
 
+#create new worksheet
+workbook = Ratings_File.create_sheet("Mysheet", 0) # insert at the end (default)
+workbook.title = "Dashboard"
+Ratings_File.save("NoteRating.xlsx")
